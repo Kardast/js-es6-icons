@@ -129,6 +129,7 @@ for (let i = 0; i < myArr.length; i++) {
 
 	// creating the container for the content
 	let myContent = document.createElement("div");
+	myContent.classList.add("my_content");
 	myCard.append(myContent);
 
 	// creating the card's content (i tag and h3 tag)
@@ -143,4 +144,18 @@ for (let i = 0; i < myArr.length; i++) {
 	let myH3Text = myArr[i].name;
 	myH3.append(myH3Text);
 	// console.log(myH3Text);
+
+	const arrColor = myArr.filter((numero) => {
+		if (numero.color === "orange") {
+
+			return true;
+		} 
+		return false;
+	})
+	console.log(arrColor);
 }
+
+
+
+// arrColor.classList.add("orange");
+// myIcon.classList.add("orange");

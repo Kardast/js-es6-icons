@@ -20,9 +20,17 @@
     width: 250px;
     margin: 50px 50px;
     border-radius: 15px;
-    box-shadow: ;
+    /* box-shadow: ; */
+}
+
+.my_content{
+    text-align: center;
 }
 
 .fas{
     font-size: 40px;
+}
+
+.orange{
+    color: orange;
 }
