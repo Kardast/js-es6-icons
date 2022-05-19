@@ -32,5 +32,13 @@
 }
 
 .orange{
-    color: orange;
+    color: rgb(133, 100, 39);
+}
+
+.green{
+    color: rgb(16, 156, 16);
+}
+
+.blue{
+    color: rgb(33, 33, 129);
 }

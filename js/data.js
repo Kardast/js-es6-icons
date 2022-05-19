@@ -137,6 +137,15 @@ for (let i = 0; i < myArr.length; i++) {
 	let myIcon = document.createElement("i");
 	myIcon.classList.add("fas", "fa-" + myArr[i].name);
 	myContent.append(myIcon);
+
+	if (myArr[i].color === "orange") {
+		myIcon.classList.add("orange");
+	} else if (myArr[i].color === "green") {
+		myIcon.classList.add("green");
+	} else if (myArr[i].color === "blue") {
+		myIcon.classList.add("blue");
+	};
+
 	// console.log(myIcon);
 		// h3 tag
 	let myH3 = document.createElement("h3");
@@ -145,17 +154,6 @@ for (let i = 0; i < myArr.length; i++) {
 	myH3.append(myH3Text);
 	// console.log(myH3Text);
 
-	const arrColor = myArr.filter((numero) => {
-		if (numero.color === "orange") {
-
-			return true;
-		} 
-		return false;
-	})
-	console.log(arrColor);
 }
 
 
-
-// arrColor.classList.add("orange");
-// myIcon.classList.add("orange");
