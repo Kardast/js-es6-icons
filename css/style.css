@@ -1,0 +1,28 @@
+/* Regole generali */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.my_container{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #dddddd;
+}
+
+.my_card{
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 125px;
+    width: 250px;
+    margin: 50px 50px;
+    border-radius: 15px;
+    box-shadow: ;
+}
+
+.fas{
+    font-size: 40px;
+}
