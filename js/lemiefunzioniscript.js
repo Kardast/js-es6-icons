@@ -1,3 +1,73 @@
+function myFilteredCardIcon(element) {
+    // creating the cards
+    let myCard = document.createElement("div");
+    myCard.classList.add("my_card");
+    myContainer.append(myCard);
+    // console.log(myCard);
+
+    // creating the container for the content
+    let myContent = document.createElement("div");
+    myContent.classList.add("my_content");
+    myCard.append(myContent);
+
+    // creating the card's content (i tag and h3 tag)
+        // i tag
+    let myIcon = document.createElement("i");
+    myIcon.classList.add("fas", "fa-" + element.name);
+    myContent.append(myIcon);
+
+    if (element.color === "orange") {
+        myIcon.classList.add("orange");
+    } else if (element.color === "green") {
+        myIcon.classList.add("green");
+    } else if (element.color === "blue") {
+        myIcon.classList.add("blue");
+    };
+
+    // console.log(myIcon);
+        // h3 tag
+    let myH3 = document.createElement("h3");
+    myContent.append(myH3);
+    let myH3Text = element.name;
+    myH3.append(myH3Text);
+    // console.log(myH3Text);
+};
+
+function myCardsIcon(iesimoArr) {
+    // creating the cards
+    let myCard = document.createElement("div");
+    myCard.classList.add("my_card");
+    myContainer.append(myCard);
+    // console.log(myCard);
+
+    // creating the container for the content
+    let myContent = document.createElement("div");
+    myContent.classList.add("my_content");
+    myCard.append(myContent);
+
+    // creating the card's content (i tag and h3 tag)
+        // i tag
+    let myIcon = document.createElement("i");
+    myIcon.classList.add("fas", "fa-" + iesimoArr.name);
+    myContent.append(myIcon);
+    if (iesimoArr.color === "orange") {
+        myIcon.classList.add("orange");
+    } else if (iesimoArr.color === "green") {
+        myIcon.classList.add("green");
+    } else if (iesimoArr.color === "blue") {
+        myIcon.classList.add("blue");
+    };
+    // console.log(myIcon);
+
+        // h3 tag
+    let myH3 = document.createElement("h3");
+    myContent.append(myH3);
+    let myH3Text = iesimoArr.name;
+    myH3.append(myH3Text);
+    // console.log(myH3Text);
+}
+
+
 /*
 creare un alert dopo tot secondi
 var seconds = parseInt(prompt("Quanto manca alla cottura della pasta?"));
